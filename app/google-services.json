@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1010407327789",
+    "firebase_url": "https://hikestreetnew.firebaseio.com",
+    "project_id": "hikestreetnew",
+    "storage_bucket": "hikestreetnew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010407327789:android:3280c1a1d58a9aac",
+        "android_client_info": {
+          "package_name": "com.pivotalsoft.user.hikestreet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010407327789-ljg6d4bjrkk63k3jtmhc5hk85usmc2h5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pivotalsoft.user.hikestreet",
+            "certificate_hash": "e69a82b3d2124942de32e2c63ed00500fe12ead2"
+          }
+        },
+        {
+          "client_id": "1010407327789-4h1tjbpg11cosfulvjrgo0pav6j9nge9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg9H2kjU8UGNXAQwRNcZUQKrk__9BFdc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010407327789-4h1tjbpg11cosfulvjrgo0pav6j9nge9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

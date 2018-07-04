@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/avatar_author" />
+
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtDistance"
+            android:layout_toStartOf="@+id/txtStatus"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFullName"
+            android:layout_toEndOf="@+id/imageProfile"
+            android:text="TextView"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <LinearLayout
+            android:id="@+id/fresherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageProfile"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_book_black_24dp"/>
+
+            <TextView
+                android:id="@+id/txtFresher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresher"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/othersLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fresherLayout"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_card_travel_black_24dp"/>
+
+            <TextView
+                android:id="@+id/txtOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="others"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/othersLayout"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp">
+
+                <Button
+                    android:id="@+id/btnShotlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/short_list"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_blue_dark"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp">
+                <Button
+                    android:id="@+id/btnReject"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/reject"
+
+                    style="?android:attr/borderlessButtonStyle"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_red_dark"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp">
+                <Button
+                    android:id="@+id/btnHire"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Hire"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_green_dark"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="status"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ribbon"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry"
+             />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
